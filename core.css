@@ -231,6 +231,7 @@ body {
     gap: 20px; 
     border: 2px solid black;
     box-shadow: 0px 10px 5px 5px rgba(0, 0, 0, 0.144);
+    transition: height 0.3s ease;
     overflow: hidden; 
 }
 
@@ -240,6 +241,7 @@ body {
     border-radius: 2.5rem;
     overflow: hidden; 
     border: 2px solid black;
+    transition: height 0.3s ease;
 }
 
 .num_box.van .up_num {

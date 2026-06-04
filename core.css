@@ -8,7 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 5000px;
+    height: 8000px;
     align-items:  center;
     
     
@@ -126,7 +126,7 @@ body {
     align-items: left;
     margin-top: 100px;
     width: 100%;
-    height: 2000px;
+    height: 3500px;
     flex-direction: column;
     background-color: rgb(79, 116, 238);
     border-radius: 3rem;
@@ -140,13 +140,167 @@ body {
 
 .form_api {
     margin-top: 50px;
-    margin-left: 8%;
-    width: 80%;
+    margin-left: 4%;
+    width: 90%;
     height: 80%;
     background-color: transparent;
-    border: 2px solid white;
-    border-radius: 2rem;
+    
+    
 }
+
+#que_t {
+    background-color: transparent;
+    margin-top: 50px;
+    margin-left: 5%;
+    color: rgb(255, 255, 255);
+    font-family: sego;
+    font-size: 2.3rem;
+    
+}
+
+.one_q {
+    margin-top: 50px;
+    margin-left: 5%;
+    width: 90%;
+    /* flex-wrap: wrap; */
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    border-radius: 2rem;
+    background-color: rgb(224, 224, 224);
+    justify-content: space-between;
+    border: 2px solid black;
+}
+
+#tk_q {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 260px;
+    height: 100%;
+    font-size: 2rem;
+    font-family: segob;
+    border-radius: 2rem;
+    
+}
+
+#row_q {
+    margin-top: 100px;
+    display: flex;
+    background-color: transparent;
+    justify-content: space-between;
+}
+
+
+.row_acc {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    background-color: transparent;
+    width: 300px;
+    
+}
+
+.box_acc {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid white;
+}
+
+.from_num {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    margin-top: 50px;
+    margin-left: 5%;
+    width: 90%;
+    height: 3000px;
+    gap: 30px;
+}
+
+.num_box {
+    display: flex;
+    flex-direction: column;
+    width: 103%;
+    height: 300px;
+    border-radius: 2.5rem;
+    background-color: rgb(255, 255, 255);
+    gap: 20px;
+    
+}
+
+.num_question {
+    background-color: transparent;
+    font-size: 2.5rem;
+    font-family: segod;
+    font-weight: bold;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.about_question {
+    background-color: transparent;
+    font-size: 2.5rem;
+    font-family: sego;
+    margin-left: 5%;
+}
+
+.box_n {
+    display: flex;
+    margin-left: 5%; 
+    gap: 10px;
+}
+
+.plus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    font-size: 2.5rem;
+    width: 80px;
+    height: 80px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(196, 196, 196);
+    border: 2px solid black;
+    font-family: sego;
+    
+}
+
+.count_n {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    font-size: 2.5rem;
+    font-family: sego;
+    width: 150px;
+    height: 80px;
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+    background-color: rgb(255, 255, 255);
+}
+
+.minus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    font-size: 2.5rem;
+    width: 80px;
+    height: 80px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(196, 196, 196);
+    border: 2px solid black;
+    font-family: sego;
+    
+}
+
+
+
+
 
 
 

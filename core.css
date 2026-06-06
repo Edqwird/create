@@ -365,7 +365,7 @@ body {
     height: 300px;
     background-color: rgba(0, 255, 255, 0);
     position: fixed;
-    top: 1700px;
+    top: 1550px;
     justify-content: center;
 }
 
@@ -388,6 +388,13 @@ body {
     font-family: sego;
 }
 
+.info_q {
+    background-color: transparent;
+    margin-left: 5%;
+    font-size: 2rem;
+    font-family: sego;
+}
+
 .dowloand_but {
     display: flex;
     justify-content: center;
@@ -402,7 +409,7 @@ body {
 }
 
 .row_dow {
-    margin-top: 5%;
+    margin-top: 1%;
     margin-left: 5%;
     background-color: transparent;
     display: flex;
@@ -413,7 +420,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(243, 243, 243);
+    background-color: rgb(79, 116, 238);
     border: 1px solid black;
     width: 100px;
     height: 100px;

@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // document.querySelector('body').style.height = '100vh';
     const text = 'questor';
     const logo = document.querySelector('.logo_start');
+    document.querySelector('.circleL').style.cursor = 'default';
     logo.textContent = '';
     let i = 0;
     
@@ -37,11 +38,14 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 4200);
         setTimeout(() => {
             document.querySelector('.four_title').classList.add('animate');
-        }, 4600);
+        }, 4200);
         setTimeout(() => {
             // document.querySelector('.end_title').style.display = 'block';
             document.querySelector('.fife_title').classList.add('animate');
-        }, 5200);
+        }, 4200);
+        setTimeout(() => {
+            document.querySelector('.end_title').classList.add('animate');
+        }, 4200);
     }
 });
 
@@ -96,3 +100,13 @@ document.querySelectorAll('.cir_dop').forEach(btn => {
         }
    }); 
 });
+
+
+window.addEventListener("scroll", function() {
+    const el = document.querySelector('.two_title');
+    const elTop = el.offsetTop;
+
+    if (window.scrollY >= elTop) {
+        document.querySelector('.boardP').style.display = 'fiexd';
+    }
+})

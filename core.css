@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -16,7 +20,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    gap: 225px;
+    gap: 200px;
     width: 60%;
     background-color: rgba(255, 104, 17, 0);
 }
@@ -30,7 +34,7 @@ body {
 }
 
 .sky_box {
-    background-color: #afafaf;
+    background-color: #afafaf00;
     /* position: relative; */
     display: flex;
     align-items: center;
@@ -49,8 +53,8 @@ body {
     align-items: center;
     width: 600px;
     height: 50px;
-    border-radius: 50px;
-    background-color: #dfdfdf;
+    border-radius: 1rem;
+    background-color: #E0DFE2;
     opacity: 0%;
     font-size: 0.9rem;
     font-weight: normal;
@@ -67,6 +71,7 @@ body {
     font-family: unbob;
     color: black;
     font-weight: normal;
+    text-decoration: none;
 }
 
 .logos_start {
@@ -165,12 +170,12 @@ body {
     align-items: center;
     width: 35px;
     height: 35px;
-    background-color: white;
+    /* background-color: white; */
     border-radius: 50px;
 }
 
 .imgar {
-    width: 20px;;
+    width: 30px;
 }
 
 
@@ -468,6 +473,12 @@ body {
 
 .imgHum {
     width: 600px;
+    transition: transform 1s ease;
+}
+
+.imgHum:hover {
+    transform: scale(1.1);
+    
 }
 
 .addInfo {
@@ -484,6 +495,7 @@ body {
     border: 1px solid rgb(179, 179, 179);
     border-radius: 40px;
     backdrop-filter: blur(4px);
+    z-index: 111;
 }
 
 .oneSub {
@@ -532,6 +544,7 @@ body {
     background-color: #000000;
     color: white;
     margin-left: auto;
+    text-decoration: none;
 }
 
 /* .link {
@@ -832,15 +845,15 @@ body {
     box-sizing: border-box;
     width: 100%; 
     background-color: rgb(0, 0, 0);
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
 
-/* .end_title.animate {
+.end_title.animate {
     display: flex;
     animation: upLoad 4s ease forwards;
-} */
+}
 
 
 .end_box {
@@ -879,10 +892,24 @@ body {
 }
 
 .boxLink {
-    width: 185px;
-    height: 80px;
+    width: 145px;
+    height: 70px;
     border-radius: 45px;
+    gap: 10px;
     background-color: #E0DFE2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.imgavaso {
+    width: 55px;
+}
+
+.tgLink {
+    width: 55px;
 }
 
 #subE {

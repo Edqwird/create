@@ -1230,8 +1230,22 @@ body {
     font-weight: normal;
 }
 
-@media (max-width: 1366px) {
+@media (max-width: 1650px) {
     .abs_title {
-        width: 70%;
+        width: 75%;
+    }
+}
+
+/* Для планшетов */
+@media (max-width: 1024px) {
+    .abs_title {
+        width: 85%;
+    }
+}
+
+/* Для телефонов */
+@media (max-width: 768px) {
+    .abs_title {
+        width: 95%;
     }
 }

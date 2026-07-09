@@ -1229,3 +1229,9 @@ body {
     font-style: normal;
     font-weight: normal;
 }
+
+@media (max-width: 1366px) {
+    .abs_title {
+        width: 70%;
+    }
+}

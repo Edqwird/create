@@ -105,8 +105,41 @@ document.querySelectorAll('.cir_dop').forEach(btn => {
 window.addEventListener("scroll", function() {
     const el = document.querySelector('.two_title');
     const elTop = el.offsetTop;
+    const board = document.querySelector('.boardP');
 
     if (window.scrollY >= elTop) {
-        document.querySelector('.boardP').style.display = 'fiexd';
+        board.style.position = 'fixed';
+        if (!board.classList.contains('animatest')) {
+            board.classList.remove('animateOut');
+            board.classList.remove('animate');
+            board.classList.add('animatest');
+        }
+    } else {
+        if (board.classList.contains('animatest')) {
+            board.classList.remove('animatest');
+            board.classList.add('animateOut');
+            setTimeout(() => {
+                board.style.position = 'static';
+                board.classList.remove('animateOut');
+                board.classList.add('animate');
+            }, 400);
+        }
     }
-})
+});
+
+const navbar = document.querySelector('.boardP');
+const sections = document.querySelector('.four_title');
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            navbar.style.background = '#b8b8b894';
+            navbar.style.transition = 'background 1s ease';
+        } else {
+            navbar.style.background = '#e0dfe294';
+            navbar.style.transition = 'background 1s ease';
+        }
+    });
+});
+
+observer.observe(sections);

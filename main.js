@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // document.querySelector('body').style.height = '100vh';
     const text = 'questor';
     const logo = document.querySelector('.logo_start');
-    document.querySelector('.circleL').style.cursor = 'default';
     logo.textContent = '';
     let i = 0;
     
@@ -55,22 +53,22 @@ const bR = document.querySelector('.circleR');
 const cardSel = document.querySelector('.cardSel');
 const cardWidth = 460;
 
-bR.addEventListener('click', function() {
-    cardSel.scrollBy({left: cardWidth, behavior: "smooth"});
-    document.querySelector('.artL').style.opacity = '100%';
-    document.querySelector('.circleR').style.cursor = 'default';
-    document.querySelector('.circleL').style.cursor = 'pointer';
-    document.querySelector('.artR').style.opacity = '60%';
+// bR.addEventListener('click', function() {
+//     cardSel.scrollBy({left: cardWidth, behavior: "smooth"});
+//     document.querySelector('.artL').style.opacity = '100%';
+//     document.querySelector('.circleR').style.cursor = 'default';
+//     document.querySelector('.circleL').style.cursor = 'pointer';
+//     document.querySelector('.artR').style.opacity = '60%';
 
-});
+// });
 
-bL.addEventListener('click', function() {
-    cardSel.scrollBy({left: -cardWidth, behavior: "smooth"});
-    document.querySelector('.artL').style.opacity = '60%';
-    document.querySelector('.circleL').style.cursor = 'default';
-    document.querySelector('.circleR').style.cursor = 'pointer';
-    document.querySelector('.artR').style.opacity = '100%';
-});
+// bL.addEventListener('click', function() {
+//     cardSel.scrollBy({left: -cardWidth, behavior: "smooth"});
+//     document.querySelector('.artL').style.opacity = '60%';
+//     document.querySelector('.circleL').style.cursor = 'default';
+//     document.querySelector('.circleR').style.cursor = 'pointer';
+//     document.querySelector('.artR').style.opacity = '100%';
+// });
 
 
 document.querySelector('.boxesCircle').addEventListener('click', function() {
